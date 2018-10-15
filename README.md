@@ -8,9 +8,11 @@ Steps to Execute the Program
 
 1.Download the com/hoolah/transactionanalyser package from github.(https://github.com/rameshkumar2410/TransactionAnalyserProject)
 
+Copy the com/hoolah/transactionanalyser package into Eclipse IDE by creating a new Java Project.
+
 2.Copy the TransactionAnalyser.csv file to D drive ("D:\\TransactionAnalyser.csv")
 
-3.Run the TransactionManager.Java class and it will give the output.
+3.Run the TransactionManager.Java class and it will give the output in IDE console.
 
 4.if you want to do different test case, Change the existing input details in 
 
