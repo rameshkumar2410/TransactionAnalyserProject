@@ -83,7 +83,7 @@ public class TransactionManager {
 	public static String getProcessedTransactionList(String fileName, String fromDate, String toDate, String merchant) {
 
 		double sumAmount = 0;
-		int numnerOfTransactions = 0;
+		int numberOfTransactions = 0;
 		double averageAmount = 0;
 		List<TransactionAnalyserBO> transactionAnalyserBOList = TransactionManager.getTransactionAnalyserList(fileName,
 				merchant);
@@ -98,12 +98,12 @@ public class TransactionManager {
 						&& transactionAnalyserBO.getTransactionDate().before(convertedToDate)) {
 					if(!transactionAnalyserBO.getType().trim().equals(REVERSAL)) {
 						sumAmount = sumAmount + transactionAnalyserBO.getAmount();
-						numnerOfTransactions++;
+						numberOfTransactions++;
 					}
 				}
 			}
-			averageAmount = sumAmount / numnerOfTransactions;
-			sb.append(numnerOfTransactions + "~" + averageAmount);
+			averageAmount = sumAmount / numberOfTransactions;
+			sb.append(numberOfTransactions + "~" + averageAmount);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
